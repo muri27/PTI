@@ -67,20 +67,14 @@ while n != nomor:
     if n < nomor:
         print("Too Small")
         n = int(input("Tebak Lagi : "))
-        if n == nomor:
-            tebak_list.append(n)
-            break
-    elif n > nomor:
+        tebak_list.append(n)
+    if n > nomor:
         print("Too Large")
         n = int(input("Tebak Lagi : "))
-        if n == nomor:
-            tebak_list.append(n)
-            break
-    elif n == nomor:
         tebak_list.append(n)
+    if n == nomor:
         break
-        
-print(tebak_list)
+
 tebak_list1 = sorted(tebak_list)
 if n == nomor:
     for i in range (len(tebak_list1)-1):
