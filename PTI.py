@@ -62,8 +62,8 @@ tebak = 1
 nomor = random.randint(1, 100)
 tebak_list = []
 n = int(input("Masukkan Nomor Tebakan : "))
+tebak_list.append(n)
 while n != nomor:
-    tebak_list.append(n)
     if n < nomor:
         print("Too Small")
         n = int(input("Tebak Lagi : "))
