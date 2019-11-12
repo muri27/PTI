@@ -81,10 +81,11 @@ while n != nomor:
         break
         
 print(tebak_list)
+tebak_list1 = sorted(tebak_list)
 if n == nomor:
-    for i in range (len(tebak_list)-1):
-        if tebak_list[i] == tebak_list[i+1]:
+    for i in range (len(tebak_list1)-1):
+        if tebak_list1[i] == tebak_list1[i+1]:
             tebak += 0
-        elif tebak_list[i] != tebak_list[i+1]:
+        elif tebak_list1[i] != tebak_list1[i+1]:
             tebak += 1
 print("Kamu Benar dengan Tebakan Sebanyak", tebak, "Kali")
